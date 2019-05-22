@@ -5,8 +5,8 @@ img {
 #galleryContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 2%;
   margin-bottom: 5%;
 }
@@ -21,13 +21,13 @@ img {
   display: block;
 }
 
-#galleryContainer .imgWithTextContainer:nth-child(2) img {
+#galleryContainer .imgWithTextContainer:nth-child(3n+2) img {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
 }
 
-#galleryContainer .imgWithTextContainer:nth-child(2) svg {
+#galleryContainer .imgWithTextContainer:nth-child(3n+2) svg {
   top: 100%;
   -webkit-transform: unset;
           transform: unset;
