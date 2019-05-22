@@ -88,7 +88,64 @@ body {
 
             footer {
                 grid-area: footer;
+                display: grid;
+                grid-template-columns: repeat(3, 33%);
 
+                div.social {
+                    nav {
+                        a.logo{
+                            display: block;
+                            width: 120px;
+
+                            img {
+                                width: 100%;
+                                margin-bottom: 10px;
+
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+
+                            li {
+                                list-style: none;
+                                width: 20%;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $fontColor;
+                                    font-size: 50px;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div.contact {
+                    h2 {
+                        margin-bottom: 10px;
+                        font-size: $h2;
+                    }
+
+                    address {}
+
+                    p {}
+                }
+
+                div.nyhedsbrev {
+                    h2 {
+                        margin-bottom: 10px;
+                        font-size: $h2;
+
+                    }
+
+                    input {
+                        background: none;
+                        height: 30px;
+                        width: 80%;
+                    }
+                }
             }
         }
     }

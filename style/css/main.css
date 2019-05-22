@@ -105,5 +105,53 @@ body div#wrapper div#area-wrapper footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+}
+
+body div#wrapper div#area-wrapper footer div.social nav a.logo {
+  display: block;
+  width: 120px;
+}
+
+body div#wrapper div#area-wrapper footer div.social nav a.logo img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+body div#wrapper div#area-wrapper footer div.social nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div#wrapper div#area-wrapper footer div.social nav ul li {
+  list-style: none;
+  width: 20%;
+}
+
+body div#wrapper div#area-wrapper footer div.social nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 50px;
+  display: block;
+}
+
+body div#wrapper div#area-wrapper footer div.contact h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+body div#wrapper div#area-wrapper footer div.nyhedsbrev h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+body div#wrapper div#area-wrapper footer div.nyhedsbrev input {
+  background: none;
+  height: 30px;
+  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */
