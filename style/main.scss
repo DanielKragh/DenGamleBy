@@ -19,7 +19,7 @@ body {
         div#area-wrapper {
             grid-area: center;
             display: grid;
-            grid-template-rows: 150px 1fr 200px;
+            
             grid-template-areas:
                 "header"
                 "main"
@@ -84,6 +84,7 @@ body {
 
             main {
                 grid-area: main;
+                // padding-bottom: (1080 / 1920 * 100)+5%;
             }
 
             footer {
@@ -91,7 +92,7 @@ body {
                 display: grid;
                 grid-template-columns: repeat(3, 33%);
                 border-top: solid;
-
+                height: 200px;
                 div.social {
                     align-self: center;
                     nav {
