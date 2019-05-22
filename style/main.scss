@@ -1,0 +1,17 @@
+body{
+    div#wrapper{
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-areas: 
+        ". center .";
+        div#area-wrapper{
+            grid-area: center;
+            display: grid;
+            grid-template-areas: 
+            
+            header{}
+            main{}
+            footer{}
+        }
+    }
+}
