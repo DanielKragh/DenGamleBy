@@ -61,11 +61,11 @@ body {
                                 color: $fontColor;
                                 text-align: center;
                                 font-family: $fontRobot;
-                               
                             }
                         }
                     }
                     hr{
+                        display: none;
                         position: absolute;
                         width: 8%;
                         height: 4px;
