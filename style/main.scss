@@ -15,11 +15,35 @@ body{
         div#area-wrapper{
             grid-area: center;
             display: grid;
+            grid-template-rows: 100px 1fr 200px;
             grid-template-areas: 
-            
-            header{}
-            main{}
-            footer{}
+            "header"
+            "main"
+            "footer";            
+            header{
+                grid-area: header;
+                nav{
+                    a{
+                        img{}
+                    }
+                    ul{
+                        a{
+                            text-decoration: none;
+                            li{
+                                list-style: none;
+                                color: $fontColor;
+                            }
+                        }
+                    }
+                }
+            }
+            main{
+                grid-area: main;
+            }
+            footer{
+                grid-area: footer;
+
+            }
         }
     }
 }

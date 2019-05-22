@@ -19,6 +19,35 @@ body div#wrapper div#area-wrapper {
   grid-area: center;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: header;
+  -ms-grid-rows: 100px 1fr 200px;
+      grid-template-rows: 100px 1fr 200px;
+      grid-template-areas: "header" "main" "footer";
+}
+
+body div#wrapper div#area-wrapper header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+body div#wrapper div#area-wrapper header nav ul a {
+  text-decoration: none;
+}
+
+body div#wrapper div#area-wrapper header nav ul a li {
+  list-style: none;
+  color: #000;
+}
+
+body div#wrapper div#area-wrapper main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+body div#wrapper div#area-wrapper footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
 }
 /*# sourceMappingURL=main.css.map */
