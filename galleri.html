@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:400,700&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="style/css/galleri.css">
     <!-- javascript -->
     <script src="js/jQuery.js"></script>
@@ -37,11 +39,12 @@
                 <div id="videoFlexContainer">
                     <div id="videoContainer">
                         <div id="videoOverlay">
-                            <h2>
+                            <h1>
                                 Galleri
-                            </h2>
+                            </h1>
                         </div>
-                        <video src="resorces/video/Cropped.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
+                        <video id="video" src="resorces/video/Cropped.mp4" oncontextmenu="return false;" autoplay="autoplay"
+                            muted="muted" loop="loop"></video>
                     </div>
                 </div>
                 <div id="galleryContainer">
@@ -125,7 +128,30 @@
                     </div>
                 </div>
             </main>
-            <footer></footer>
+            <footer>
+                <div class="social">
+                    <nav>
+                        <a href="index.html" class="logo"><img src="resorces/img/logo.png"
+                                alt="Den Gamle By's Logo"></a>
+                        <ul>
+                            <li><a href="" class="fab fa-facebook-square"></a></li>
+                            <li><a href="" class="fab fa-instagram"></a></li>
+                            <li><a href="" class="fab fa-twitter"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contact">
+                    <h2>Kontakt</h2>
+                    <address>Viborgvej 2, 8000 Aarhus C</address>
+                    <p>+45 88 88 88 88</p>
+                    <p>dengamleby@mail.com</p>
+                </div>
+                <div class="nyhedsbrev">
+                    <h2>Skriv dig på vores nyhedsbrev
+                    </h2>
+                    <input type="email" placeholder="Skriv din Email...">
+                </div>
+            </footer>
         </div>
     </div>
 </body>

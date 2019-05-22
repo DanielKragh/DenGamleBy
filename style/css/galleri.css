@@ -8,6 +8,7 @@ img {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2%;
+  margin-bottom: 5%;
 }
 
 #galleryContainer .imgWithTextContainer {
@@ -84,12 +85,16 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000a6;
+  background-color: #00000073;
 }
 
-#videoFlexContainer #videoContainer #videoOverlay h2 {
+#videoFlexContainer #videoContainer #videoOverlay h1 {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
 }
 /*# sourceMappingURL=galleri.css.map */
