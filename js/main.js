@@ -1,0 +1,4 @@
+$(function(){
+    // navbar border animation
+
+});

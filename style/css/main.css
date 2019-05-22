@@ -3,6 +3,11 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f9f8f5;
 }
 
 body div#wrapper {
@@ -19,8 +24,8 @@ body div#wrapper div#area-wrapper {
   grid-area: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px 1fr 200px;
-      grid-template-rows: 100px 1fr 200px;
+  -ms-grid-rows: 150px 1fr 200px;
+      grid-template-rows: 150px 1fr 200px;
       grid-template-areas: "header" "main" "footer";
 }
 
@@ -30,13 +35,62 @@ body div#wrapper div#area-wrapper header {
   grid-area: header;
 }
 
+body div#wrapper div#area-wrapper header nav {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin: 10px;
+}
+
+body div#wrapper div#area-wrapper header nav div#logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body div#wrapper div#area-wrapper header nav div#logo a {
+  display: block;
+  width: 200px;
+}
+
+body div#wrapper div#area-wrapper header nav div#logo a img {
+  width: 100%;
+}
+
+body div#wrapper div#area-wrapper header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+}
+
 body div#wrapper div#area-wrapper header nav ul a {
   text-decoration: none;
+  display: block;
+  width: 25%;
 }
 
 body div#wrapper div#area-wrapper header nav ul a li {
+  margin: 0 2.5%;
   list-style: none;
   color: #000;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+body div#wrapper div#area-wrapper header nav hr {
+  position: absolute;
+  width: 8%;
+  height: 4px;
+  background-color: #01306d;
+  border: none;
 }
 
 body div#wrapper div#area-wrapper main {

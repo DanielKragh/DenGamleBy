@@ -4,43 +4,82 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: $fontMont;
 }
 
-body{
-    div#wrapper{
+body {
+    background-color: $bg;
+    div#wrapper {
         display: grid;
         grid-template-columns: 1fr 10fr 1fr;
-        grid-template-areas: 
-        ". center .";
-        div#area-wrapper{
+        grid-template-areas:
+            ". center .";
+
+        div#area-wrapper {
             grid-area: center;
             display: grid;
-            grid-template-rows: 100px 1fr 200px;
-            grid-template-areas: 
-            "header"
-            "main"
-            "footer";            
-            header{
+            grid-template-rows: 150px 1fr 200px;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+
+            header {
                 grid-area: header;
-                nav{
-                    a{
-                        img{}
-                    }
-                    ul{
-                        a{
-                            text-decoration: none;
-                            li{
-                                list-style: none;
-                                color: $fontColor;
+
+                nav {
+                    position: relative;
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+                    margin: 10px;
+                    div#logo {
+                        align-self: center;
+                        justify-self: center;
+                        a {
+                            display: block;
+                            width: 200px;
+                            
+                            img {
+                                width: 100%;
+
                             }
                         }
                     }
+
+                    ul {
+                        display: flex;
+                        justify-self: center;  
+                        align-self: center;
+                        width: 50%;
+                        a {
+                            text-decoration: none;
+                            display: block;
+                            width: 25%;
+                            li {
+                                margin: 0 2.5%;
+                                list-style: none;
+                                color: $fontColor;
+                                text-align: center;
+                                font-family: $fontRobot;
+                                
+                            }
+                        }
+                    }
+                    hr{
+                        position: absolute;
+                        width: 8%;
+                        height: 4px;
+                        background-color: $blue;
+                        border: none;
+                    }
                 }
             }
-            main{
+
+            main {
                 grid-area: main;
             }
-            footer{
+
+            footer {
                 grid-area: footer;
 
             }
