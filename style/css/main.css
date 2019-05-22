@@ -152,6 +152,16 @@ body div#wrapper div#area-wrapper footer div.nyhedsbrev h2 {
 body div#wrapper div#area-wrapper footer div.nyhedsbrev input {
   background: none;
   height: 30px;
-  width: 80%;
+  width: 70%;
+  border: solid 2px #01306d;
+  color: #01306d;
+}
+
+body div#wrapper div#area-wrapper footer div.nyhedsbrev button {
+  height: 30px;
+  padding: 5px 10px;
+  background: #01306d;
+  color: white;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -143,7 +143,16 @@ body {
                     input {
                         background: none;
                         height: 30px;
-                        width: 80%;
+                        width: 70%;
+                        border: solid 2px $blue;
+                        color: $blue;
+                    }
+                    button{
+                        height: 30px;
+                        padding: 5px 10px;
+                        background: $blue;
+                        color: white;
+                        border: none;
                     }
                 }
             }
