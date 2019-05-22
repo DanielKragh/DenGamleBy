@@ -71,18 +71,19 @@ body div#wrapper div#area-wrapper header nav ul {
   width: 50%;
 }
 
-body div#wrapper div#area-wrapper header nav ul a {
-  text-decoration: none;
-  display: block;
-  width: 25%;
-}
-
-body div#wrapper div#area-wrapper header nav ul a li {
+body div#wrapper div#area-wrapper header nav ul li {
   margin: 0 2.5%;
   list-style: none;
   color: #000;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  width: 25%;
+}
+
+body div#wrapper div#area-wrapper header nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: #000;
 }
 
 body div#wrapper div#area-wrapper header nav hr {
