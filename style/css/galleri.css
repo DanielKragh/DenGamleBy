@@ -1,0 +1,62 @@
+img {
+  width: 100%;
+}
+
+#galleryContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+}
+
+#galleryContainer .imgWithTextContainer {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "one" "two";
+}
+
+#galleryContainer .imgWithTextContainer > img {
+  display: block;
+}
+
+#galleryContainer .imgWithTextContainer:nth-child(2) img {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#galleryContainer .imgWithTextContainer:nth-child(2) svg {
+  top: 100%;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+#galleryContainer .description {
+  position: relative;
+  padding: 10%;
+  background-color: white;
+  height: 100%;
+}
+
+#galleryContainer .description .nameAndImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10%;
+}
+
+#galleryContainer .description .nameAndImg img {
+  width: 20%;
+  height: 20%;
+}
+
+#galleryContainer .description svg {
+  position: absolute;
+  width: 15%;
+  left: 3%;
+  top: 0;
+  -webkit-transform: translateY(-100%) rotate(180deg);
+          transform: translateY(-100%) rotate(180deg);
+}
+/*# sourceMappingURL=galleri.css.map */
