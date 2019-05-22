@@ -86,6 +86,7 @@ body div#wrapper div#area-wrapper header nav ul a li {
 }
 
 body div#wrapper div#area-wrapper header nav hr {
+  display: none;
   position: absolute;
   width: 8%;
   height: 4px;
