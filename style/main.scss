@@ -6,9 +6,11 @@
     margin: 0;
     font-family: $fontMont;
 }
-p{
+
+p {
     line-height: 1.5;
 }
+
 body {
     background-color: $bg;
 
@@ -21,7 +23,7 @@ body {
         div#area-wrapper {
             grid-area: center;
             display: grid;
-            
+
             grid-template-areas:
                 "header"
                 "main"
@@ -142,6 +144,7 @@ body {
 
                 div.social {
                     align-self: center;
+
                     nav {
                         // margin-right: 28%;
                         ul {
@@ -165,6 +168,7 @@ body {
 
                 div.contact {
                     align-self: center;
+
                     h2 {
                         margin-bottom: 10px;
                         font-size: $h2;
@@ -180,6 +184,7 @@ body {
                         display: flex;
                     }
                     align-self: center;
+
                     h2 {
                         margin-bottom: 10px;
                         font-size: $h2;
@@ -193,7 +198,8 @@ body {
                         border: solid 2px $blue;
                         color: $blue;
                     }
-                    button{
+
+                    button {
                         height: 30px;
                         padding: 5px 10px;
                         background: $blue;

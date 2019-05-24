@@ -21,21 +21,27 @@ div#wrapper div#area-wrapper main section.left-side {
 
 div#wrapper div#area-wrapper main section.left-side div h2 {
   text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+div#wrapper div#area-wrapper main section.left-side div p {
+  width: 80%;
 }
 
 div#wrapper div#area-wrapper main section.left-side div img {
-  width: 60%;
+  width: 80%;
+  margin: 40px 0;
 }
 
 div#wrapper div#area-wrapper main section.right-side {
   width: 40%;
-  background-color: #f9f8f5da;
-  margin: 20px;
+  background-color: #95959517;
+  margin: 0 20px;
 }
 
 div#wrapper div#area-wrapper main section.right-side div {
-  width: 80%;
-  margin: 40px auto;
+  width: 90%;
+  margin: 80px auto;
 }
 
 div#wrapper div#area-wrapper main section.right-side div h3 {
@@ -49,7 +55,8 @@ div#wrapper div#area-wrapper main section.right-side div table {
 
 div#wrapper div#area-wrapper main section.right-side div table tbody tr td {
   border-bottom: solid 2px #000;
-  padding-top: 10px;
+  padding: 20px 0 10px;
+  font-size: 15px;
 }
 
 div#wrapper div#area-wrapper main section.right-side div table tbody tr td:nth-child(2) {

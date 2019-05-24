@@ -5,17 +5,11 @@ $(function () {
     $(window).on("resize", function () {
         navAni();
     });
-
-    // video
-    var vid = document.getElementById("video");
-    vid.playbackRate = 0.5;
-
-    // newsletter alert
+// newsletter alert
     $("form").on("submit", function(){
         alert("Du er tilmeldt nyhedsbrev");
         return false;
     });
-
 });
 function navAni() {
     var hr = $(".hr-ani");
