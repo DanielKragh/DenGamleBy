@@ -112,31 +112,54 @@ body div#wrapper div#area-wrapper footer {
   -ms-grid-columns: (33%)[3];
       grid-template-columns: repeat(3, 33%);
   border-top: solid;
-  height: 200px;
-  margin-top: 40px;
 }
 
 @media only screen and (max-width: 600px) {
   body div#wrapper div#area-wrapper footer {
-    -ms-grid-columns: (33%)[2];
-        grid-template-columns: repeat(2, 33%);
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    height: unset;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    grid-gap: 20px;
   }
+  body div#wrapper div#area-wrapper footer div.nyhedsbrev {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) and (max-width: 450px) {
+  body div#wrapper div#area-wrapper footer {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+  }
+  body div#wrapper div#area-wrapper footer div.nyhedsbrev {
+    -ms-grid-column: unset;
+        grid-column-start: unset;
+    grid-column-end: unset;
+  }
+  body div#wrapper div#area-wrapper footer div.social nav {
+    margin-right: 0;
+  }
+}
+
+body div#wrapper div#area-wrapper footer a.logo {
+  display: block;
+  width: 120px;
+}
+
+body div#wrapper div#area-wrapper footer a.logo img {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 body div#wrapper div#area-wrapper footer div.social {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-body div#wrapper div#area-wrapper footer div.social nav a.logo {
-  display: block;
-  width: 120px;
-}
-
-body div#wrapper div#area-wrapper footer div.social nav a.logo img {
-  width: 100%;
-  margin-bottom: 10px;
 }
 
 body div#wrapper div#area-wrapper footer div.social nav ul {
@@ -147,14 +170,13 @@ body div#wrapper div#area-wrapper footer div.social nav ul {
 
 body div#wrapper div#area-wrapper footer div.social nav ul li {
   list-style: none;
-  width: 20%;
+  margin-right: 10px;
 }
 
 body div#wrapper div#area-wrapper footer div.social nav ul li a {
   text-decoration: none;
   color: #000;
   font-size: 50px;
-  display: block;
 }
 
 body div#wrapper div#area-wrapper footer div.contact {
@@ -174,6 +196,12 @@ body div#wrapper div#area-wrapper footer div.nyhedsbrev {
       align-self: center;
 }
 
+body div#wrapper div#area-wrapper footer div.nyhedsbrev form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body div#wrapper div#area-wrapper footer div.nyhedsbrev h2 {
   margin-bottom: 10px;
   font-size: 20px;
@@ -182,7 +210,7 @@ body div#wrapper div#area-wrapper footer div.nyhedsbrev h2 {
 body div#wrapper div#area-wrapper footer div.nyhedsbrev input {
   background: none;
   height: 30px;
-  width: 70%;
+  width: 100%;
   border: solid 2px #01306d;
   color: #01306d;
 }
