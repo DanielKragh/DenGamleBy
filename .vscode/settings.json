@@ -6,5 +6,6 @@
             "savePath": "~/css"
         }
     ],
-    "liveSassCompile.settings.showOutputWindow": false
+    "liveSassCompile.settings.showOutputWindow": false,
+    "scssFormatter.useTabs": true
 }

@@ -116,6 +116,13 @@ body div#wrapper div#area-wrapper footer {
   margin-top: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+  body div#wrapper div#area-wrapper footer {
+    -ms-grid-columns: (33%)[2];
+        grid-template-columns: repeat(2, 33%);
+  }
+}
+
 body div#wrapper div#area-wrapper footer div.social {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
