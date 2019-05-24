@@ -62,13 +62,13 @@ body {
                             list-style: none;
                             color: $fontColor;
                             text-align: center;
-                            font-family: $fontRobot;
                             width: 25%;
 
                             a {
                                 text-decoration: none;
                                 display: block;
                                 color: $fontColor;
+                                font-family: $fontRobot;
                             }
                         }
                     }
