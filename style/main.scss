@@ -6,7 +6,9 @@
     margin: 0;
     font-family: $fontMont;
 }
-
+p{
+    line-height: 1.5;
+}
 body {
     background-color: $bg;
 
@@ -110,6 +112,7 @@ body {
 
                             }
                         }
+                        
 
                         ul {
                             display: flex;
