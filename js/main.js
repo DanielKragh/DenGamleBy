@@ -7,8 +7,14 @@ $(function () {
     });
 
     // video
-    var vid = document.getElementById("video");
-    vid.playbackRate = 0.5;
+    // var vid = document.getElementById("video");
+    // vid.playbackRate = 0.5;
+
+    // newsletter alert
+    $("form").on("submit", function(){
+        alert("Du er tilmeldt nyhedsbrev");
+        return false;
+    });
 
 });
 function navAni() {

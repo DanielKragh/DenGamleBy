@@ -4,8 +4,55 @@ div#wrapper {
   background-size: 100%;
 }
 
-header {
+div#wrapper div#area-wrapper header {
   padding-bottom: 66.875%;
   height: 0;
+}
+
+div#wrapper div#area-wrapper main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#wrapper div#area-wrapper main section.left-side {
+  width: 60%;
+}
+
+div#wrapper div#area-wrapper main section.left-side div h2 {
+  text-align: center;
+}
+
+div#wrapper div#area-wrapper main section.left-side div img {
+  width: 60%;
+}
+
+div#wrapper div#area-wrapper main section.right-side {
+  width: 40%;
+  background-color: #f9f8f5da;
+  margin: 20px;
+}
+
+div#wrapper div#area-wrapper main section.right-side div {
+  width: 80%;
+  margin: 40px auto;
+}
+
+div#wrapper div#area-wrapper main section.right-side div h3 {
+  text-align: center;
+}
+
+div#wrapper div#area-wrapper main section.right-side div table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+div#wrapper div#area-wrapper main section.right-side div table tbody tr td {
+  border-bottom: solid 2px #000;
+  padding-top: 10px;
+}
+
+div#wrapper div#area-wrapper main section.right-side div table tbody tr td:nth-child(2) {
+  text-align: right;
 }
 /*# sourceMappingURL=index.css.map */
