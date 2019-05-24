@@ -74,7 +74,6 @@ body div#wrapper div#area-wrapper header nav ul li {
   list-style: none;
   color: #000;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   width: 25%;
 }
 
@@ -82,6 +81,7 @@ body div#wrapper div#area-wrapper header nav ul li a {
   text-decoration: none;
   display: block;
   color: #000;
+  font-family: "Roboto", sans-serif;
 }
 
 body div#wrapper div#area-wrapper header nav hr {
