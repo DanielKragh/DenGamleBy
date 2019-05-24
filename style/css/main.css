@@ -113,6 +113,7 @@ body div#wrapper div#area-wrapper footer {
       grid-template-columns: repeat(3, 33%);
   border-top: solid;
   height: 200px;
+  margin-top: 40px;
 }
 
 body div#wrapper div#area-wrapper footer div.social {
