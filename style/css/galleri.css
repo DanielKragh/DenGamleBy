@@ -37,41 +37,46 @@ img {
   display: block;
 }
 
-@media only screen and (max-width: 600px) {
-  #galleryContainer .imgWithTextContainer:nth-child(even) img {
+#galleryContainer .imgWithTextContainer svg {
+  -webkit-transform: translateY(-100%) rotate(180deg);
+          transform: translateY(-100%) rotate(180deg);
+}
+
+@media only screen and (min-width: 600px) {
+  #galleryContainer .imgWithTextContainer:nth-child(3n + 2) > img {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #galleryContainer .imgWithTextContainer:nth-child(3n + 2) svg {
+    top: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  #galleryContainer .imgWithTextContainer:nth-child(even) > img {
     -ms-grid-row: 2;
         grid-row-start: 2;
     grid-row-end: 3;
   }
   #galleryContainer .imgWithTextContainer:nth-child(even) svg {
     top: 100%;
-    -webkit-transform: unset;
-            transform: unset;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #galleryContainer .imgWithTextContainer:nth-child(3n+2) img {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #galleryContainer .imgWithTextContainer:nth-child(3n+2) svg {
-    top: 100%;
-    -webkit-transform: unset;
-            transform: unset;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  #galleryContainer .imgWithTextContainer img {
-    -ms-grid-row: unset !important;
-        grid-row-start: unset !important;
-    grid-row-end: unset !important;
+  #galleryContainer .imgWithTextContainer > img {
+    -ms-grid-row: unset;
+        grid-row-start: unset;
+    grid-row-end: unset;
   }
   #galleryContainer .imgWithTextContainer svg {
-    top: 0 !important;
-    bottom: 0 !important;
+    top: 0;
+    bottom: 0;
   }
 }
 
@@ -99,8 +104,6 @@ img {
   width: 15%;
   left: 3%;
   top: 0;
-  -webkit-transform: translateY(-100%) rotate(180deg);
-          transform: translateY(-100%) rotate(180deg);
 }
 
 #videoFlexContainer {

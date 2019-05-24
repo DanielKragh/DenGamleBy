@@ -90,6 +90,10 @@ body {
             footer {
                 grid-area: footer;
                 display: grid;
+                //2 columns
+                @media only screen and (max-width: 600px) {
+                    grid-template-columns: repeat(2, 33%);
+                }
                 grid-template-columns: repeat(3, 33%);
                 border-top: solid;
                 height: 200px;
