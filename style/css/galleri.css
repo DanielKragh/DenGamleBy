@@ -139,7 +139,7 @@ img {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 13vw;
   color: white;
 }
 /*# sourceMappingURL=galleri.css.map */
