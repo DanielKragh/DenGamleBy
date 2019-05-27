@@ -156,6 +156,35 @@ img {
           transform: translate(-50%, -50%);
   font-size: 13vw;
   color: white;
+  font-family: "Bauhaus93", sans-serif;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(1) {
+  color: #ed1c24;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(2) {
+  color: #f7931e;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(3) {
+  color: #0071bc;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(4) {
+  color: #0071bc;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(5) {
+  color: #f7931e;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(6) {
+  color: #ed1c24;
+}
+
+#videoFlexContainer #videoContainer #videoOverlay h1 span:nth-child(7) {
+  color: #f7931e;
 }
 
 #lightbox {

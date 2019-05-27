@@ -73,6 +73,7 @@ body div#wrapper div#area-wrapper header nav div#logo a {
 
 body div#wrapper div#area-wrapper header nav div#logo a img {
   width: 100%;
+  cursor: pointer;
 }
 
 body div#wrapper div#area-wrapper header nav ul {
@@ -331,6 +332,7 @@ body div#wrapper div#area-wrapper footer div.nyhedsbrev button {
   padding: 5px 10px;
   background: #01306d;
   color: white;
+  cursor: pointer;
   border: none;
 }
 /*# sourceMappingURL=main.css.map */
