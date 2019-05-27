@@ -37,14 +37,17 @@ body {
                     display: grid;
                     grid-template-rows: 1fr 1fr;
                     margin: 10px;
-
+                    z-index: 1000;
                     div#logo {
                         align-self: center;
                         justify-self: center;
+                        width: 200px;
+                        @media only screen and (max-width: 600px){
+                            width: 50vw;
+                        }
 
                         a {
                             display: block;
-                            width: 200px;
 
                             img {
                                 width: 100%;
@@ -91,7 +94,7 @@ body {
                     svg#Burger{
                         position: absolute;
                         top: 10px;
-                        left: -40px;
+                        left: -30px;
                         width: 50px;
                         z-index: 10;
                         cursor: pointer;
