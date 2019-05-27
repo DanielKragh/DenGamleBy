@@ -24,10 +24,12 @@ function lightbox() {
         switch (event.type) {
             case "mouseover":
                 var newElement = ("<i class='fas fa-search-plus'></i>");
-                $(this).append(newElement);
+                $(newElement).appendTo(this).hide().fadeIn(500);
                 break;
             case "mouseout":
-                $(this).find(".fa-search-plus").remove();
+                $(this).find(".fa-search-plus").fadeOut(500, function(){
+                    $(this).remove();
+                });
                 break;
         }
     });
