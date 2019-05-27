@@ -109,18 +109,19 @@ body div#wrapper div#area-wrapper footer {
   grid-area: footer;
   display: -ms-grid;
   display: grid;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -ms-grid-columns: (33%)[3];
       grid-template-columns: repeat(3, 33%);
   border-top: solid;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body div#wrapper div#area-wrapper footer {
     -ms-grid-columns: (50%)[2];
         grid-template-columns: repeat(2, 50%);
     height: unset;
-    margin-bottom: 20px;
-    padding-top: 10px;
     grid-gap: 20px;
   }
   body div#wrapper div#area-wrapper footer div.nyhedsbrev {
@@ -129,9 +130,20 @@ body div#wrapper div#area-wrapper footer {
     grid-column-end: 3;
     text-align: center;
   }
+  body div#wrapper div#area-wrapper footer div.nyhedsbrev form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body div#wrapper div#area-wrapper footer div.nyhedsbrev form input {
+    max-width: 400px;
+  }
+  body div#wrapper div#area-wrapper footer div.social nav ul a {
+    font-size: 40px !important;
+  }
 }
 
-@media only screen and (max-width: 600px) and (max-width: 450px) {
+@media only screen and (max-width: 800px) and (max-width: 450px) {
   body div#wrapper div#area-wrapper footer {
     -ms-grid-columns: (100%)[1];
         grid-template-columns: repeat(1, 100%);
@@ -142,7 +154,16 @@ body div#wrapper div#area-wrapper footer {
     grid-column-end: unset;
   }
   body div#wrapper div#area-wrapper footer div.social nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-right: 0;
+  }
+  body div#wrapper div#area-wrapper footer div.contact {
+    text-align: center;
   }
 }
 
