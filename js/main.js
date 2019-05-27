@@ -5,8 +5,39 @@ $(function () {
     $(window).on("resize", function () {
         navAni();
     });
+
+    // BURGER animation
+    var burger = $("#Burger");
+    var hrElm = $("<hr class='burger-hr'>");
+    burger.on("click", function () {
+        $("ul").toggleClass("show");
+        if($("ul").hasClass("show")){
+           $("li").append(hrElm); 
+           $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+        } else{
+            $(".burger-hr").remove();
+            $('html, body').css({
+                overflow: 'visible',
+                height: 'auto'
+            });
+        }
+        
+    })
+    $(window).on("resize", function () {
+        $("ul").removeClass("show");
+        tl.reverse();
+        $(".burger-hr").remove();
+            $('html, body').css({
+                overflow: 'visible',
+                height: 'auto'
+            });
+    })
+
     // newsletter alert
-    $("form").on("submit", function(){
+    $("form").on("submit", function () {
         alert("Du er tilmeldt nyhedsbrev");
         return false;
     });
