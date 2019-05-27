@@ -1,11 +1,12 @@
+var tl = new TimelineMax({
+    paused: true
+});
 document.addEventListener("DOMContentLoaded", function (event) {
     var burger = document.querySelector("#Burger");
     var top = document.querySelector("#top");
     var mid = document.querySelector("#mid");
     var bot = document.querySelector("#bot");
-    var tl = new TimelineMax({
-        paused: true
-    });
+    
     // animationer
     tl.to(bot, 1, {
         y: "100%",

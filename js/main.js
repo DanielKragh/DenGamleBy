@@ -26,6 +26,15 @@ $(function () {
         }
         
     })
+    $(window).on("resize", function () {
+        $("ul").removeClass("show");
+        tl.reverse();
+        $(".burger-hr").remove();
+            $('html, body').css({
+                overflow: 'visible',
+                height: 'auto'
+            });
+    })
 
     // newsletter alert
     $("form").on("submit", function () {
