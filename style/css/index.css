@@ -11,16 +11,11 @@ div#wrapper div#area-wrapper header {
   position: relative;
 }
 
-div#wrapper div#area-wrapper header svg {
+div#wrapper div#area-wrapper header svg#overskrift {
   position: absolute;
   top: 6.5vw;
   left: -15%;
   width: 130%;
-}
-
-div#wrapper div#area-wrapper header svg text.oversvgT {
-  -webkit-transform: translate(-100%, 100%);
-          transform: translate(-100%, 100%);
 }
 
 div#wrapper div#area-wrapper main {
@@ -35,7 +30,7 @@ div#wrapper div#area-wrapper main section.left-side {
 
 div#wrapper div#area-wrapper main section.left-side div h2 {
   text-align: center;
-  margin: 40px 0 20px 0;
+  margin: 80px 0 20px 0;
 }
 
 div#wrapper div#area-wrapper main section.left-side div p {
@@ -55,7 +50,7 @@ div#wrapper div#area-wrapper main section.right-side {
 
 div#wrapper div#area-wrapper main section.right-side div {
   width: 90%;
-  margin: 80px auto;
+  margin: 100px auto;
 }
 
 div#wrapper div#area-wrapper main section.right-side div h3 {

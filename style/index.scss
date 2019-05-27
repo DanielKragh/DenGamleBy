@@ -14,19 +14,12 @@ div#wrapper {
             nav {
                 
             }
-            svg {
+            svg#overskrift {
                     position: absolute;
                     top: 6.5vw;
                     left: -15%;
                     width: 130%;
-                    rect{
-
-                    }
-                    text{
-                        &.oversvgT{
-                            transform: translate(-100%,100%);
-                        }
-                    }
+                      
                 }
         }
 
@@ -39,7 +32,7 @@ div#wrapper {
                 div {
                     h2 {
                         text-align: center;
-                        margin: 40px 0 20px 0;
+                        margin: 80px 0 20px 0;
                     }
 
                     p {
@@ -60,7 +53,7 @@ div#wrapper {
 
                 div {
                     width: 90%;
-                    margin: 80px auto;
+                    margin: 100px auto;
 
                     &.pris {}
 

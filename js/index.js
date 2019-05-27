@@ -7,11 +7,7 @@ $(function () {
     var overSvg = $(".oversvg");
     var overSvgT = $(".oversvgT");
     var tl = new TimelineMax();
-    console.log(overSvg);
-    // TweenMax.to(overSvg[3], 1, {transform: "translate(50%, 50%)"});
-
-
     tl.staggerFrom(overSvg, 1, {
-        transform: "translate(-100%, 150%)"
+        transform: "translate(-1000px, 200px)"
     }, 0.25);
 });
