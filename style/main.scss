@@ -7,6 +7,11 @@
     font-family: $fontMont;
 }
 
+@font-face {
+    font-family: "Bauhaus93";
+    src: url(../../resorces/fonts/BAUHS93.ttf) format("truetype");
+}
+
 p {
     line-height: 1.5;
 }
