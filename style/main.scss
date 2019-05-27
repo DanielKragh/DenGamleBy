@@ -58,7 +58,9 @@ body {
                         justify-self: center;
                         align-self: center;
                         width: 50%;
-
+                        @media only screen and (max-width: 800px){
+                            display: none;
+                        }
                         li {
                             margin: 0 2.5%;
                             list-style: none;
@@ -82,6 +84,22 @@ body {
                         height: 4px;
                         background-color: $blue;
                         border: none;
+                        @media only screen and (max-width: 800px){
+                            display: none !important;
+                        }
+                    }
+                    svg#Burger{
+                        position: absolute;
+                        top: 10px;
+                        left: -40px;
+                        width: 50px;
+                        z-index: 10;
+                        cursor: pointer;
+                        fill: $blue;
+                        display: none;
+                        @media only screen and (max-width: 800px){
+                            display: block;
+                        }
                     }
                 }
             }
@@ -94,7 +112,7 @@ body {
             footer {
                 grid-area: footer;
                 display: grid;
-                margin-top: 30px;
+                margin-top: 70px;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 //2 columns

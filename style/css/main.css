@@ -73,6 +73,12 @@ body div#wrapper div#area-wrapper header nav ul {
   width: 50%;
 }
 
+@media only screen and (max-width: 800px) {
+  body div#wrapper div#area-wrapper header nav ul {
+    display: none;
+  }
+}
+
 body div#wrapper div#area-wrapper header nav ul li {
   margin: 0 2.5%;
   list-style: none;
@@ -97,6 +103,29 @@ body div#wrapper div#area-wrapper header nav hr {
   border: none;
 }
 
+@media only screen and (max-width: 800px) {
+  body div#wrapper div#area-wrapper header nav hr {
+    display: none !important;
+  }
+}
+
+body div#wrapper div#area-wrapper header nav svg#Burger {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  width: 50px;
+  z-index: 10;
+  cursor: pointer;
+  fill: #01306d;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  body div#wrapper div#area-wrapper header nav svg#Burger {
+    display: block;
+  }
+}
+
 body div#wrapper div#area-wrapper main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -109,7 +138,7 @@ body div#wrapper div#area-wrapper footer {
   grid-area: footer;
   display: -ms-grid;
   display: grid;
-  margin-top: 30px;
+  margin-top: 70px;
   padding-top: 20px;
   padding-bottom: 20px;
   -ms-grid-columns: (33%)[3];

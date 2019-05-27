@@ -5,12 +5,15 @@ $(function () {
     $(window).on("resize", function () {
         navAni();
     });
-// newsletter alert
+    // newsletter alert
     $("form").on("submit", function(){
         alert("Du er tilmeldt nyhedsbrev");
         return false;
     });
+
 });
+
+
 function navAni() {
     var hr = $(".hr-ani");
     var active = $(".active");
