@@ -82,7 +82,22 @@ body div#wrapper div#area-wrapper header nav ul {
 
 @media only screen and (max-width: 800px) {
   body div#wrapper div#area-wrapper header nav ul {
-    display: none;
+    position: fixed;
+    top: -100%;
+    left: -15%;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    width: 130%;
+    height: 100%;
+    padding-top: 100px;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  body div#wrapper div#area-wrapper header nav ul.show {
+    top: 0;
   }
 }
 
@@ -91,7 +106,32 @@ body div#wrapper div#area-wrapper header nav ul li {
   list-style: none;
   color: #000;
   text-align: center;
-  width: 25%;
+}
+
+@media only screen and (min-width: 799px) {
+  body div#wrapper div#area-wrapper header nav ul li {
+    width: 25%;
+  }
+  body div#wrapper div#area-wrapper header nav ul li hr.burger-hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body div#wrapper div#area-wrapper header nav ul li {
+    padding: 20px 0;
+  }
+  body div#wrapper div#area-wrapper header nav ul li:nth-child(1) {
+    padding-top: 0;
+  }
+  body div#wrapper div#area-wrapper header nav ul li hr.burger-hr {
+    width: 4%;
+    margin: 0 auto;
+    border: solid 2px #01306d;
+    border-radius: 2px;
+    background-color: #01306d;
+    height: 6px;
+  }
 }
 
 body div#wrapper div#area-wrapper header nav ul li a {
@@ -101,7 +141,16 @@ body div#wrapper div#area-wrapper header nav ul li a {
   font-family: "Roboto", sans-serif;
 }
 
-body div#wrapper div#area-wrapper header nav hr {
+@media only screen and (max-width: 800px) {
+  body div#wrapper div#area-wrapper header nav ul li a {
+    color: #01306d;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+body div#wrapper div#area-wrapper header nav hr.hr-ani {
   display: none;
   position: absolute;
   width: 8%;
@@ -111,7 +160,7 @@ body div#wrapper div#area-wrapper header nav hr {
 }
 
 @media only screen and (max-width: 800px) {
-  body div#wrapper div#area-wrapper header nav hr {
+  body div#wrapper div#area-wrapper header nav hr.hr-ani {
     display: none !important;
   }
 }

@@ -38,11 +38,13 @@ body {
                     grid-template-rows: 1fr 1fr;
                     margin: 10px;
                     z-index: 1000;
+
                     div#logo {
                         align-self: center;
                         justify-self: center;
                         width: 200px;
-                        @media only screen and (max-width: 600px){
+
+                        @media only screen and (max-width: 600px) {
                             width: 50vw;
                         }
 
@@ -61,37 +63,87 @@ body {
                         justify-self: center;
                         align-self: center;
                         width: 50%;
-                        @media only screen and (max-width: 800px){
-                            display: none;
+
+                        @media only screen and (max-width: 800px) {
+                            position: fixed;
+                            top: -100%;
+                            left: -15%;
+                            justify-self: left;
+                            display: block;
+                            background-color: #fff;
+                            text-align: center;
+                            width: 130%;
+                            height: 100%;
+                            padding-top: 100px;
+                            transition: 1.5s;
+
+                            &.show {
+                                top: 0;
+
+                            }
                         }
+
                         li {
                             margin: 0 2.5%;
                             list-style: none;
                             color: $fontColor;
                             text-align: center;
-                            width: 25%;
+
+                            @media only screen and (min-width: 799px) {
+                                width: 25%;
+
+                                hr.burger-hr {
+                                    display: none;
+                                }
+                            }
+
+                            @media only screen and (max-width: 800px) {
+                                padding: 20px 0;
+                                &:nth-child(1){
+                                    padding-top: 0;
+                                }
+
+
+                                hr.burger-hr {
+                                    width: 4%;
+                                    margin: 0 auto;
+                                    border: solid 2px $blue;
+                                    border-radius: 2px;
+                                    background-color: $blue;
+                                    height: 6px;
+                                }
+                            }
 
                             a {
                                 text-decoration: none;
                                 display: block;
                                 color: $fontColor;
                                 font-family: $fontRobot;
+
+                                @media only screen and (max-width: 800px) {
+                                    color: $blue;
+                                    font-weight: 700;
+                                    font-size: 30px;
+                                    margin-bottom: 20px;
+                                }
                             }
                         }
                     }
 
-                    hr {
+                    hr.hr-ani {
                         display: none;
                         position: absolute;
                         width: 8%;
                         height: 4px;
                         background-color: $blue;
                         border: none;
-                        @media only screen and (max-width: 800px){
+
+                        @media only screen and (max-width: 800px) {
                             display: none !important;
                         }
                     }
-                    svg#Burger{
+
+                    svg#Burger {
                         position: absolute;
                         top: 10px;
                         left: -30px;
@@ -100,7 +152,8 @@ body {
                         cursor: pointer;
                         fill: $blue;
                         display: none;
-                        @media only screen and (max-width: 800px){
+
+                        @media only screen and (max-width: 800px) {
                             display: block;
                         }
                     }
@@ -118,25 +171,29 @@ body {
                 margin-top: 70px;
                 padding-top: 20px;
                 padding-bottom: 20px;
+
                 //2 columns
                 @media only screen and (max-width: 800px) {
                     grid-template-columns: repeat(2, 50%);
                     height: unset;
                     grid-gap: 20px;
+
                     div.nyhedsbrev {
                         grid-column-start: 1;
                         grid-column-end: 3;
                         text-align: center;
-                        
+
                         form {
                             justify-content: center;
+
                             input {
                                 max-width: 400px;
                             }
                         }
                     }
+
                     div.social {
-                        nav {                   
+                        nav {
                             ul {
                                 a {
                                     font-size: 40px !important;
@@ -144,20 +201,24 @@ body {
                             }
                         }
                     }
+
                     //1 column
-                    @media only screen and (max-width: 450px){                        
+                    @media only screen and (max-width: 450px) {
                         grid-template-columns: repeat(1, 100%);
+
                         div.nyhedsbrev {
                             grid-column-start: unset;
                             grid-column-end: unset;
                         }
+
                         div.social {
-                            nav {      
-                                display: flex; 
-                                justify-content: space-between;                    
+                            nav {
+                                display: flex;
+                                justify-content: space-between;
                                 margin-right: 0;
                             }
                         }
+
                         div.contact {
                             text-align: center;
                         }
@@ -166,8 +227,8 @@ body {
 
                 grid-template-columns: repeat(3, 33%);
                 border-top: solid;
-                
-                a.logo{
+
+                a.logo {
                     display: block;
                     width: 120px;
 
@@ -184,6 +245,7 @@ body {
                     nav {
                         ul {
                             display: flex;
+
                             li {
                                 list-style: none;
                                 margin-right: 10px;
@@ -215,6 +277,7 @@ body {
                     form {
                         display: flex;
                     }
+
                     align-self: center;
 
                     h2 {
