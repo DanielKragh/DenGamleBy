@@ -17,7 +17,7 @@ function lightbox() {
     images.on("click", function () {
         var imgSrc = $(this).find("img").attr("src");
         overlayImage.attr("src", imgSrc);
-        lightboxContainer.show();
+        lightboxContainer.fadeIn(500);
     });
 
     images.on("mouseenter mouseleave", function () {
@@ -36,11 +36,11 @@ function lightbox() {
 
     lightboxContainer.on("click", function (e) {
         if (e.target === lightboxContainer[0]) {
-            lightboxContainer.hide();
+            lightboxContainer.fadeOut(500);
         }
     });
 
     lightboxCloseBtn.on("click", function () {
-        lightboxContainer.hide();
+        lightboxContainer.fadeOut(500);
     });
 }
