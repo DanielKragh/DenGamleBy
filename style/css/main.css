@@ -44,6 +44,7 @@ body div#wrapper div#area-wrapper header nav {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   margin: 10px;
+  z-index: 1000;
 }
 
 body div#wrapper div#area-wrapper header nav div#logo {
@@ -52,11 +53,17 @@ body div#wrapper div#area-wrapper header nav div#logo {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  body div#wrapper div#area-wrapper header nav div#logo {
+    width: 50vw;
+  }
 }
 
 body div#wrapper div#area-wrapper header nav div#logo a {
   display: block;
-  width: 200px;
 }
 
 body div#wrapper div#area-wrapper header nav div#logo a img {
@@ -112,7 +119,7 @@ body div#wrapper div#area-wrapper header nav hr {
 body div#wrapper div#area-wrapper header nav svg#Burger {
   position: absolute;
   top: 10px;
-  left: -40px;
+  left: -30px;
   width: 50px;
   z-index: 10;
   cursor: pointer;

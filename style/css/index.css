@@ -5,6 +5,12 @@ div#wrapper {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 800px) {
+  div#wrapper {
+    background-position-y: 10vw;
+  }
+}
+
 div#wrapper div#area-wrapper header {
   padding-bottom: 66.875%;
   height: 0;
@@ -18,14 +24,28 @@ div#wrapper div#area-wrapper header svg#overskrift {
   width: 130%;
 }
 
+@media only screen and (max-width: 800px) {
+  div#wrapper div#area-wrapper header svg#overskrift {
+    padding-top: 10vw;
+  }
+}
+
 div#wrapper div#area-wrapper main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 div#wrapper div#area-wrapper main section.left-side {
   width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  div#wrapper div#area-wrapper main section.left-side {
+    width: 100%;
+  }
 }
 
 div#wrapper div#area-wrapper main section.left-side div h2 {
@@ -37,15 +57,33 @@ div#wrapper div#area-wrapper main section.left-side div p {
   width: 80%;
 }
 
+@media only screen and (max-width: 600px) {
+  div#wrapper div#area-wrapper main section.left-side div p {
+    width: 100%;
+  }
+}
+
 div#wrapper div#area-wrapper main section.left-side div img {
   width: 80%;
   margin: 40px 0;
 }
 
+@media only screen and (max-width: 600px) {
+  div#wrapper div#area-wrapper main section.left-side div img {
+    width: 100%;
+  }
+}
+
 div#wrapper div#area-wrapper main section.right-side {
   width: 40%;
   background-color: #95959517;
-  margin: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  div#wrapper div#area-wrapper main section.right-side {
+    width: 100%;
+    margin-top: 100px;
+  }
 }
 
 div#wrapper div#area-wrapper main section.right-side div {

@@ -5,6 +5,9 @@ div#wrapper {
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden;
+    @media only screen and (max-width: 800px){
+        background-position-y: 10vw;
+    }
     //padding-bottom: 
     div#area-wrapper {
         header {
@@ -19,16 +22,20 @@ div#wrapper {
                     top: 6.5vw;
                     left: -15%;
                     width: 130%;
-                      
+                    @media only screen and (max-width: 800px){
+                        padding-top: 10vw;
+                    }
                 }
         }
 
         main {
             display: flex;
-
+            flex-wrap: wrap;
             section.left-side {
                 width: 60%;
-
+                @media only screen and (max-width: 600px){
+                width: 100%;
+                }
                 div {
                     h2 {
                         text-align: center;
@@ -37,11 +44,17 @@ div#wrapper {
 
                     p {
                         width: 80%;
+                        @media only screen and (max-width: 600px){
+                            width: 100%;
+                            }
                     }
 
                     img {
                         width: 80%;
                         margin: 40px 0;
+                        @media only screen and (max-width: 600px){
+                            width: 100%;
+                            }
                     }
                 }
             }
@@ -49,8 +62,10 @@ div#wrapper {
             section.right-side {
                 width: 40%;
                 background-color: $bgo;
-                margin: 0 20px;
-
+                @media only screen and (max-width: 600px){
+                    width: 100%;
+                    margin-top: 100px;
+                    }
                 div {
                     width: 90%;
                     margin: 100px auto;
