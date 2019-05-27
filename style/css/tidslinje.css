@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=tidslinje.css.map */
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#gridContainer {
+  display: -ms-grid;
+  display: grid;
+}
+
+#gridContainer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
+#gridContainer .row .right,
+#gridContainer .row .left {
+  position: relative;
+}
+
+#gridContainer .row .plakat {
+  text-align: center;
+  width: 100%;
+}
+
+#gridContainer .row .plakat img {
+  width: 40%;
+}
+
+#gridContainer .row .animation.left img {
+  top: 50%;
+  left: 0;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#gridContainer .row .animation.right img {
+  top: 50%;
+  left: 100%;
+  position: absolute;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+#gridContainer .row .left {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#gridContainer .row .left p {
+  padding: 4%;
+}
+
+#gridContainer .row .right {
+  position: relative;
+}
+/*# sourceMappingURL=tidslinje.css.map */
