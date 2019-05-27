@@ -2,11 +2,25 @@ div#wrapper {
   background-image: url("../../resorces/img/SammenklipGamleBy.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  overflow: hidden;
 }
 
 div#wrapper div#area-wrapper header {
   padding-bottom: 66.875%;
   height: 0;
+  position: relative;
+}
+
+div#wrapper div#area-wrapper header svg {
+  position: absolute;
+  top: 6.5vw;
+  left: -15%;
+  width: 130%;
+}
+
+div#wrapper div#area-wrapper header svg text.oversvgT {
+  -webkit-transform: translate(-100%, 100%);
+          transform: translate(-100%, 100%);
 }
 
 div#wrapper div#area-wrapper main {
