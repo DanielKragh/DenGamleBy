@@ -50,9 +50,6 @@ img {
           transform: translate(-50%, -50%);
   font-size: 50px;
   cursor: pointer;
-  display: none;
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 #galleryContainer .imgWithTextContainer svg {
