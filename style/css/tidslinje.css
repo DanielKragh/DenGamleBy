@@ -3,12 +3,54 @@ h1 {
   margin-bottom: 100px;
 }
 
+body {
+  position: relative;
+}
+
+#linjeContainer {
+  position: absolute;
+  height: 100%;
+  width: 55%;
+}
+
+#linjeContainer #linje {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#linjeContainer #linje path {
+  stroke-dasharray: 3550;
+  stroke-dashoffset: 3550;
+}
+
+#linjeContainer .dot {
+  position: absolute;
+  width: 5%;
+}
+
+#linjeContainer #firstDot {
+  top: 23.5%;
+  left: 94.3%;
+}
+
+#linjeContainer #secondDot {
+  top: 48.4%;
+  left: 67.6%;
+}
+
+#linjeContainer #thirdDot {
+  top: 77.6%;
+  left: 94.5%;
+}
+
 #gridContainer {
   display: -ms-grid;
   display: grid;
 }
 
 #gridContainer .row {
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -31,6 +73,7 @@ h1 {
 }
 
 #gridContainer .row .animation.left img {
+  width: 30%;
   top: 50%;
   left: 0;
   position: absolute;
@@ -39,6 +82,7 @@ h1 {
 }
 
 #gridContainer .row .animation.right img {
+  width: 30%;
   top: 50%;
   left: 100%;
   position: absolute;
@@ -50,13 +94,31 @@ h1 {
   position: relative;
   text-align: center;
   width: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #gridContainer .row .left p {
   padding: 4%;
 }
 
+#gridContainer .row .left.fade-in-from-left {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 #gridContainer .row .right {
   position: relative;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#gridContainer .row .right.fade-in-from-right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=tidslinje.css.map */

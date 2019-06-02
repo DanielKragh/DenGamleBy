@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forside</title>
+    <title>Tidslinje</title>
     <!-- Fonts -->
     <link rel="stylesheet" href="resorces/fonts/robotoAndMontserrat.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:400,700&display=swap" rel="stylesheet"> -->
@@ -22,6 +22,10 @@
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/CustomEase.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!-- JS filer -->
     <script src="js/main.js"></script>
     <script src="js/tidslinje.js"></script>
@@ -29,6 +33,58 @@
 </head>
 
 <body>
+    <div id="linjeContainer">
+        <div id="triggerTest"></div>
+        <svg id="linje" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1096.66 2670.77">
+            <defs>
+                <style>
+                    .a {
+                        fill: none;
+                        stroke: #000;
+                        stroke-miterlimit: 10;
+                        stroke-width: 8px;
+                    }
+                </style>
+            </defs>
+            <title>TidslinjeLinjeWithDots</title>
+            <path class="a"
+                d="M.5,24.5c180.89,7.09,641.68,49.29,928,371,55.07,61.88,107.8,122.74,127,217,55.56,272.84-258.54,390.21-285,696-25.47,294.25,250,378.44,290,733,29.2,259.15-86.88,488.26-196.5,647.5"
+                transform="translate(-0.34 -20.5)" />
+        </svg>
+        <svg id="firstDot" class="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63">
+            <defs>
+                <style>
+                    .b {
+                        fill: #fbb03b;
+                    }
+                </style>
+            </defs>
+            <title>TidslinjeLinjeDot</title>
+            <circle class="b" cx="31.5" cy="31.5" r="31.5" />
+        </svg>
+        <svg id="secondDot" class="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63">
+            <defs>
+                <style>
+                    .b {
+                        fill: #fbb03b;
+                    }
+                </style>
+            </defs>
+            <title>TidslinjeLinjeDot</title>
+            <circle class="b" cx="31.5" cy="31.5" r="31.5" />
+        </svg>
+        <svg id="thirdDot" class="dot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63">
+            <defs>
+                <style>
+                    .b {
+                        fill: #fbb03b;
+                    }
+                </style>
+            </defs>
+            <title>TidslinjeLinjeDot</title>
+            <circle class="b" cx="31.5" cy="31.5" r="31.5" />
+        </svg>
+    </div>
     <div id="wrapper">
         <div id="area-wrapper">
             <header>
