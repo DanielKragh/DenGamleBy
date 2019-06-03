@@ -7,6 +7,11 @@ body {
   position: relative;
 }
 
+#lunde-ild {
+  -webkit-transform: translate(-31%, -21%);
+          transform: translate(-31%, -21%);
+}
+
 #linjeContainer {
   position: absolute;
   height: 100%;

@@ -4,46 +4,30 @@ function animation1() {
     var lunde = $("#lunde");
     var lundeIld = $("#lunde-ild");
     var boom = $("#boom");
-
-    boom.css({
-        "display": "none"
-    });
-
-
-    var lengthy = $("#wire")[0].getTotalLength();
     
+    bombe.show();
+    lunde.show();
+    lundeIld.show();
+    boom.hide();
 
+    $("animateMotion")[0].beginElement();
 
-    var tl = new TimelineLite({});
-    // t1.to(lundeIld, 0, {
-
-    // });
-    var counter = 0;
-    function SomethingWeird(){
-        counter += 0.3;
-        var test = $("#wire")[0].getPointAtLength(counter * lengthy).x;
-        lundeIld[0].setAttribute("transform", "translateX(" + test + ")");
-        requestAnimationFrame(SomethingWeird);
-    }
-
-    requestAnimationFrame(SomethingWeird);
-
-    tl.to($(".lunde-ani"), 3, {
-        "stroke-dashoffset": 550
+    var tl = new TimelineLite({ paused: false });
+    tl.fromTo($(".lunde-ani"), 3, {
+        "stroke-dashoffset": 0
+    }, {
+        "stroke-dashoffset": 550,
+        ease: Linear.easeNone,
+        onComplete: function () {
+            bombe.hide();
+            lunde.hide();
+            lundeIld.hide();
+            boom.show();
+        }
     }, 0);
-    tl.to(bombe, 0,{
-        display:"none"
-    });
-    tl.to(lunde, 0,{
-        display:"none"
-    });
-    tl.to(lundeIld, 0,{
-        display:"none"
-    });
-    tl.to(boom, 0,{
-        display: "block"
-    });
-    tl.from(boom, 1, {
+    tl.fromTo(boom, 1, {
         transform: "scale(0)"
-    })
+    }, {
+        transform: "scale(1)"
+    });
 }

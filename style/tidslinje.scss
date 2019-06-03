@@ -8,7 +8,7 @@ body {
 }
 
 #lunde-ild {
-	// transform: translate(-31%,-21%);
+	transform: translate(-31%,-21%);
 }
 
 #linjeContainer {
@@ -92,11 +92,18 @@ body {
 			&.right {
 				svg#bombe-ani {
 					g#lunde {
+						// display: none;
 						path.lunde-ani {
 							stroke-dasharray: 550;
 							stroke-dashoffset: 0;
 						}
 					}
+					// #bombe {
+					// 	display: none;
+					// }
+					// #lunde-ild {
+					// 	display: none;
+					// }
 
 					g#boom {
 						transform-origin: center;
