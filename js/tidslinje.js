@@ -26,7 +26,8 @@ window.onload = function(){
     scene.on("end", function(){
         $(".left").eq(0).toggleClass("fade-in-from-left");
         $(".right").eq(0).toggleClass("fade-in-from-right");
-        $("#firstDot").toggleClass("show");
+        $("#firstDot").toggleClass("show");        
+        animation1();
     });
     scene2.on("end", function(){
         $(".left").eq(1).toggleClass("fade-in-from-left");
