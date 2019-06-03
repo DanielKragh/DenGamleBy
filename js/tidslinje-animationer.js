@@ -9,11 +9,28 @@ function animation1() {
         "display": "none"
     });
 
-    var tl = new TimelineLite();
+
+    var lengthy = $("#wire")[0].getTotalLength();
     
+
+
+    var tl = new TimelineLite({});
+    // t1.to(lundeIld, 0, {
+
+    // });
+    var counter = 0;
+    function SomethingWeird(){
+        counter += 0.3;
+        var test = $("#wire")[0].getPointAtLength(counter * lengthy).x;
+        lundeIld[0].setAttribute("transform", "translateX(" + test + ")");
+        requestAnimationFrame(SomethingWeird);
+    }
+
+    requestAnimationFrame(SomethingWeird);
+
     tl.to($(".lunde-ani"), 3, {
         "stroke-dashoffset": 550
-    }, 1);
+    }, 0);
     tl.to(bombe, 0,{
         display:"none"
     });
