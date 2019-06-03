@@ -1,5 +1,5 @@
 //https://scrollmagic.io/docs/ScrollMagic.Scene.html
-var addIndicators = false;
+var addIndicators = true;
 
 //We use onload here instead because jquery's onload event happens to early.
 window.onload = function(){
@@ -22,20 +22,21 @@ window.onload = function(){
     var scene3 = new ScrollMagic.Scene({ triggerElement: "#secondDot", duration: ThirdDotDuration - SecondDotDuration})
         .setTween(tween3)
         .addTo(controller);
+        
     scene.on("end", function(){
         $(".left").eq(0).toggleClass("fade-in-from-left");
         $(".right").eq(0).toggleClass("fade-in-from-right");
-        $("#firstDot").toggleClass("test");
+        $("#firstDot").toggleClass("show");
     });
     scene2.on("end", function(){
         $(".left").eq(1).toggleClass("fade-in-from-left");
         $(".right").eq(1).toggleClass("fade-in-from-right");
-        $("#secondDot").toggleClass("test");
+        $("#secondDot").toggleClass("show");
     });
     scene3.on("end", function(){
         $(".left").eq(2).toggleClass("fade-in-from-left");
         $(".right").eq(2).toggleClass("fade-in-from-right");
-        $("#thirdDot").toggleClass("test");
+        $("#thirdDot").toggleClass("show");
     });
 
     if(addIndicators){
