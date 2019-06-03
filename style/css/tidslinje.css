@@ -27,6 +27,11 @@ body {
 #linjeContainer .dot {
   position: absolute;
   width: 5%;
+  opacity: 0;
+}
+
+#linjeContainer .test {
+  opacity: 1;
 }
 
 #linjeContainer #firstDot {
