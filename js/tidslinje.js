@@ -9,17 +9,17 @@ window.onload = function(){
     var ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
     var tween = new TimelineMax()
         .add(TweenMax.to($("#linje path"), 0.8, { strokeDashoffset: 2229, ease: Linear.easeNone }))
-    var scene = new ScrollMagic.Scene({duration: FirstDotDuration })
+    var scene = new ScrollMagic.Scene({duration: FirstDotDuration-100 })
         .setTween(tween)
         .addTo(controller)
     var tween2 = new TimelineMax()
         .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 1487, ease: Linear.easeNone }));
-    var scene2 = new ScrollMagic.Scene({ triggerElement: "#firstDot", duration: SecondDotDuration - FirstDotDuration})
+    var scene2 = new ScrollMagic.Scene({ triggerElement: "#firstDot", duration: SecondDotDuration - FirstDotDuration-200})
         .setTween(tween2)
         .addTo(controller);
     var tween3 = new TimelineMax()
-        .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 637, ease: Linear.easeNone }));
-    var scene3 = new ScrollMagic.Scene({ triggerElement: "#secondDot", duration: ThirdDotDuration - SecondDotDuration})
+        .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 637, ease: Linear.easeNone })); //637
+    var scene3 = new ScrollMagic.Scene({ triggerElement: "#secondDot", duration: ThirdDotDuration - SecondDotDuration-200})
         .setTween(tween3)
         .addTo(controller);
         
