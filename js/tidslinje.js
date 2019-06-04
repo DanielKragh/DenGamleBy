@@ -48,7 +48,7 @@ window.onload = function(){
         scene3.addIndicators();
     }
     
-    $(window).on("resize", function(){
+    $(window).on("scroll", function(){
         FirstDotDuration = $("#firstDot").position().top - $(window).height() / 2;
         SecondDotDuration = $("#secondDot").position().top - $(window).height() / 2;
         ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
@@ -56,6 +56,7 @@ window.onload = function(){
         scene2.duration(SecondDotDuration - FirstDotDuration - 200);
         scene3.duration(ThirdDotDuration - SecondDotDuration - 200);
     });
+
 }
 //FirstDot: 2229
 //SecondDot: 1487
