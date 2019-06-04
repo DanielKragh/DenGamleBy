@@ -9,30 +9,30 @@ window.onload = function(){
     var ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
     var tween = new TimelineMax()
         .add(TweenMax.to($("#linje path"), 0.8, { strokeDashoffset: 2229, ease: Linear.easeNone }))
-    var scene = new ScrollMagic.Scene({duration: FirstDotDuration })
+    var scene = new ScrollMagic.Scene({duration: FirstDotDuration-100 })
         .setTween(tween)
         .addTo(controller)
     var tween2 = new TimelineMax()
         .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 1487, ease: Linear.easeNone }));
-    var scene2 = new ScrollMagic.Scene({ triggerElement: "#firstDot", duration: SecondDotDuration - FirstDotDuration})
+    var scene2 = new ScrollMagic.Scene({ triggerElement: "#firstDot", duration: SecondDotDuration - FirstDotDuration-200})
         .setTween(tween2)
         .addTo(controller);
     var tween3 = new TimelineMax()
-        .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 637, ease: Linear.easeNone }));
-    var scene3 = new ScrollMagic.Scene({ triggerElement: "#secondDot", duration: ThirdDotDuration - SecondDotDuration})
+        .add(TweenMax.to($("#linje path"), 0.9, { strokeDashoffset: 637, ease: Linear.easeNone })); //637
+    var scene3 = new ScrollMagic.Scene({ triggerElement: "#secondDot", duration: ThirdDotDuration - SecondDotDuration-200})
         .setTween(tween3)
         .addTo(controller);
         
     scene.on("end", function(){
         $(".left").eq(0).toggleClass("fade-in-from-left");
         $(".right").eq(0).toggleClass("fade-in-from-right");
-        $("#firstDot").toggleClass("show");        
+        $("#firstDot").toggleClass("show");
         animation1();
     });
     scene2.on("end", function(){
         $(".left").eq(1).toggleClass("fade-in-from-left");
         $(".right").eq(1).toggleClass("fade-in-from-right");
-        $("#secondDot").toggleClass("show");
+        $("#secondDot").toggleClass("show");    
         animation2()
     });
     scene3.on("end", function(){
@@ -48,14 +48,16 @@ window.onload = function(){
         scene3.addIndicators();
     }
     
-    $(window).on("resize", function(){
+    $(window).on("resize scroll", function(){
+        console.log("test");
         FirstDotDuration = $("#firstDot").position().top - $(window).height() / 2;
         SecondDotDuration = $("#secondDot").position().top - $(window).height() / 2;
         ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
-        scene.duration(FirstDotDuration);
-        scene2.duration(SecondDotDuration - FirstDotDuration);
-        scene3.duration(ThirdDotDuration - SecondDotDuration);
+        scene.duration(FirstDotDuration - 100);
+        scene2.duration(SecondDotDuration - FirstDotDuration - 200);
+        scene3.duration(ThirdDotDuration - SecondDotDuration - 200);
     });
+
 }
 //FirstDot: 2229
 //SecondDot: 1487
