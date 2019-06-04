@@ -64,6 +64,10 @@ body {
 	display: grid;
 
 	.row {
+		&:last-child {
+			margin-bottom: 0;	
+		}
+
 		overflow: hidden;
 		display: grid;
 		@media only screen and (max-width: 620px) {
