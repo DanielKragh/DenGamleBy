@@ -18,6 +18,12 @@ body {
   width: 55%;
 }
 
+@media only screen and (max-width: 620px) {
+  #linjeContainer {
+    width: 100%;
+  }
+}
+
 #linjeContainer #linje {
   position: absolute;
   width: 100%;
@@ -33,6 +39,12 @@ body {
   position: absolute;
   width: 5%;
   opacity: 0;
+}
+
+@media only screen and (max-width: 620px) {
+  #linjeContainer .dot {
+    left: 82% !important;
+  }
 }
 
 #linjeContainer .show {
@@ -85,12 +97,28 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 620px) {
+  #gridContainer .row .plakat {
+    text-align: left;
+  }
+}
+
 #gridContainer .row .plakat img {
   width: 40%;
 }
 
 #gridContainer .row .animation.left {
   text-align: left;
+}
+
+@media only screen and (max-width: 620px) {
+  #gridContainer .row .animation.left svg, #gridContainer .row .animation.left img {
+    width: 50% !important;
+    position: absolute !important;
+    left: 100% !important;
+    -webkit-transform: translateX(-100%) !important;
+            transform: translateX(-100%) !important;
+  }
 }
 
 #gridContainer .row .animation.left svg#maane-raket {
@@ -166,6 +194,22 @@ body {
   stroke-dashoffset: 0;
 }
 
+#gridContainer .row .animation.right #star-wars .st0 {
+  fill: #00FF00;
+}
+
+#gridContainer .row .animation.right #star-wars .st1 {
+  fill: #333333;
+}
+
+#gridContainer .row .animation.right #star-wars .st2 {
+  fill: #666666;
+}
+
+#gridContainer .row .animation.right #star-wars .st3 {
+  fill: #FF0000;
+}
+
 #gridContainer .row .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -189,6 +233,12 @@ body {
   padding: 4%;
 }
 
+@media only screen and (max-width: 620px) {
+  #gridContainer .row .left p {
+    padding: 0;
+  }
+}
+
 #gridContainer .row .left.fade-in-from-left {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -202,17 +252,19 @@ body {
   transition: 1s;
 }
 
-#gridContainer .row .right.fade-in-from-right {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
 @media only screen and (max-width: 620px) {
   #gridContainer .row .right {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: 1/1;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
+}
+
+#gridContainer .row .right.fade-in-from-right {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 #mobile-indicator {

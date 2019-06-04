@@ -15,6 +15,9 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 55%;
+	@media only screen and (max-width: 620px){
+		width: 100%;
+	}
 
 	#linje {
 		position: absolute;
@@ -27,7 +30,11 @@ body {
 		}
 	}
 
-	.dot {
+	.dot {	
+		@media only screen and (max-width: 620px){
+			left: 82% !important;
+		}
+
 		position: absolute;
 		width: 5%;
 		opacity: 0;
@@ -35,11 +42,6 @@ body {
 
 	.show {
 		opacity: 1;
-	}
-
-	
-	@media only screen and (max-width: 620px){
-		//TODO: position dots for mobile.
 	}
 
 	#firstDot {
@@ -76,7 +78,11 @@ body {
 		}
 
 		.plakat {
+			@media only screen and (max-width: 620px) {
+				text-align: left;
+			}
 			text-align: center;
+			
 			width: 100%;
 
 			img {
@@ -87,8 +93,17 @@ body {
 		.animation {
 			&.left {
 				text-align: left;
+				@media only screen and (max-width: 620px) {
+					svg, img {
+						width: 50% !important;
+						position: absolute !important;
+						left: 100% !important;
+						transform: translateX(-100%) !important;
+					}
+				}
 				svg#maane-raket {
 					width: 400px;
+
 					g {
 						.st0 {
 							fill: #808080;
@@ -117,9 +132,8 @@ body {
 						.st6 {
 							fill: #FFCD3B;
 						}
-						&#raket-ild{
-							
-						}
+
+						&#raket-ild {}
 					}
 				}
 			}
@@ -159,6 +173,7 @@ body {
 						stroke-width: 32;
 						stroke-miterlimit: 10;
 					}
+
 					g#lunde {
 
 						// display: none;
@@ -166,6 +181,24 @@ body {
 							stroke-dasharray: 550;
 							stroke-dashoffset: 0;
 						}
+					}
+				}
+
+				#star-wars {
+					.st0 {
+						fill: #00FF00;
+					}
+
+					.st1 {
+						fill: #333333;
+					}
+
+					.st2 {
+						fill: #666666;
+					}
+
+					.st3 {
+						fill: #FF0000;
 					}
 				}
 			}
@@ -182,8 +215,12 @@ body {
 			width: 100%;
 			transform: translateX(-100%);
 			transition: 1s;
-
+			
+			
 			p {
+				@media only screen and (max-width: 620px) {
+					padding: 0;
+				}
 				padding: 4%;
 			}
 
@@ -193,23 +230,16 @@ body {
 		}
 
 		.right {
+			@media only screen and (max-width: 620px) {
+				grid-area: 1/1;
+				transform: translateX(-100%);
+			}
 			position: relative;
 			transform: translateX(100%);
 			transition: 1s;
 
 			&.fade-in-from-right {
 				transform: translateX(0);
-			}
-			@media only screen and (max-width: 620px) {
-				grid-area: 1/1;
-				// img {
-				// 	width: 50% !important;
-				// 	top: unset !important;
-				// 	left: 100% !important;
-				// 	right: unset !important;
-				// 	position: absolute !important;
-				// 	transform: translate(-100%, 0) !important;
-				// }
 			}
 		}
 	}
