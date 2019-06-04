@@ -84,8 +84,10 @@ body {
 		.animation {
 			&.left {
 				text-align: left;
+
 				svg#maane-raket {
 					width: 400px;
+
 					g {
 						.st0 {
 							fill: #808080;
@@ -114,9 +116,8 @@ body {
 						.st6 {
 							fill: #FFCD3B;
 						}
-						&#raket-ild{
-							
-						}
+
+						&#raket-ild {}
 					}
 				}
 			}
@@ -148,6 +149,7 @@ body {
 						stroke-width: 32;
 						stroke-miterlimit: 10;
 					}
+
 					g#lunde {
 
 						// display: none;
@@ -177,6 +179,24 @@ body {
 								offset-distance: 100%;
 							}
 						}
+					}
+				}
+
+				#star-wars {
+					.st0 {
+						fill: #00FF00;
+					}
+
+					.st1 {
+						fill: #333333;
+					}
+
+					.st2 {
+						fill: #666666;
+					}
+
+					.st3 {
+						fill: #FF0000;
 					}
 				}
 			}

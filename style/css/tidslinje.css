@@ -179,6 +179,22 @@ body {
   }
 }
 
+#gridContainer .row .animation.right #star-wars .st0 {
+  fill: #00FF00;
+}
+
+#gridContainer .row .animation.right #star-wars .st1 {
+  fill: #333333;
+}
+
+#gridContainer .row .animation.right #star-wars .st2 {
+  fill: #666666;
+}
+
+#gridContainer .row .animation.right #star-wars .st3 {
+  fill: #FF0000;
+}
+
 #gridContainer .row .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

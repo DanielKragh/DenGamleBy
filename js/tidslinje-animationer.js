@@ -43,8 +43,12 @@ function animation2() {
 
     var tl = new TimelineLite()
     
-    tl.from(raketMedIld, 3, {
+    raketIld.show();
+    tl.fromTo(raketMedIld, 3, {
         transform: "translateY(-400px)",
+        
+    },{
+        transform: "translateY(0)",
         onComplete: function(){
             raketIld.hide();
         }
@@ -55,4 +59,25 @@ function animation2() {
         transformOrigin: "50%"
     });
     
+}
+function animation3() {
+    var red = $("#red");
+    var green = $("#green");
+
+    var tl = new TimelineLite();
+    tl.fromTo(red, 2, {
+        rotation: 0,
+        transformOrigin: "50% bottom"
+    },{
+        rotation: -30
+
+    });
+    var tl2 = new TimelineLite();
+    tl2.fromTo(green, 2, {
+        rotation: 0,
+        transformOrigin: "50% bottom"
+    },{
+        rotation: 30
+
+    });
 }
