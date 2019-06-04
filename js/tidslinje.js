@@ -48,7 +48,8 @@ window.onload = function(){
         scene3.addIndicators();
     }
     
-    $(window).on("scroll", function(){
+    $(window).on("resize scroll", function(){
+        console.log("test");
         FirstDotDuration = $("#firstDot").position().top - $(window).height() / 2;
         SecondDotDuration = $("#secondDot").position().top - $(window).height() / 2;
         ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
