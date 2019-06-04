@@ -50,6 +50,7 @@ img {
           transform: translate(-50%, -50%);
   font-size: 50px;
   cursor: pointer;
+  color: white;
 }
 
 #galleryContainer .imgWithTextContainer svg {
@@ -112,6 +113,7 @@ img {
 #galleryContainer .description .nameAndImg img {
   width: 20%;
   height: 20%;
+  margin-left: 20%;
 }
 
 #galleryContainer .description svg {
@@ -134,6 +136,12 @@ img {
   position: relative;
   width: 85%;
   margin-bottom: 12%;
+}
+
+@media only screen and (max-width: 600px) {
+  #videoFlexContainer #videoContainer {
+    width: 100%;
+  }
 }
 
 #videoFlexContainer #videoContainer video {

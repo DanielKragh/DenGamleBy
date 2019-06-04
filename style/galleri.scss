@@ -41,6 +41,7 @@ img {
 				transform: translate(-50%, -50%);
 				font-size: 50px;
 				cursor: pointer;
+				color: white;
 			}
 		}
 
@@ -104,6 +105,7 @@ img {
 			img {
 				width: 20%;
 				height: 20%;
+				margin-left: 20%;
 			}
 
 			margin-bottom: 10%;
@@ -126,6 +128,9 @@ img {
 		position: relative;
 		width: 85%;
 		margin-bottom: 12%;
+		@media only screen and (max-width: 600px) {
+			width: 100%;
+		}
 
 		video {
 			width: 100%;
