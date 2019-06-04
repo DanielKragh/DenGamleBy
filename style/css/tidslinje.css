@@ -89,13 +89,66 @@ body {
   width: 40%;
 }
 
-#gridContainer .row .animation.left img {
-  width: 30%;
-  top: 50%;
-  left: 0;
-  position: absolute;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+#gridContainer .row .animation.left {
+  text-align: left;
+}
+
+#gridContainer .row .animation.left svg#maane-raket {
+  width: 400px;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st0 {
+  fill: #808080;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st1 {
+  fill: #999999;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st2 {
+  fill: #E1E1E6;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st3 {
+  fill: #0071BC;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st4 {
+  fill: #B95A24;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st5 {
+  fill: #F95A24;
+}
+
+#gridContainer .row .animation.left svg#maane-raket g .st6 {
+  fill: #FFCD3B;
+}
+
+#gridContainer .row .animation.right svg#bombe-ani .st0 {
+  stroke: #000000;
+  stroke-miterlimit: 10;
+}
+
+#gridContainer .row .animation.right svg#bombe-ani .st1 {
+  fill: #ED1C24;
+  stroke: #FBB03B;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+#gridContainer .row .animation.right svg#bombe-ani .st2 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3.1;
+  stroke-miterlimit: 10;
+}
+
+#gridContainer .row .animation.right svg#bombe-ani .st3 {
+  fill: #EDC124;
+  stroke: #FB371D;
+  stroke-width: 32;
+  stroke-miterlimit: 10;
 }
 
 @media only screen and (max-width: 620px) {
