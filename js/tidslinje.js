@@ -52,9 +52,9 @@ window.onload = function(){
         FirstDotDuration = $("#firstDot").position().top - $(window).height() / 2;
         SecondDotDuration = $("#secondDot").position().top - $(window).height() / 2;
         ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;
-        scene.duration(FirstDotDuration);
-        scene2.duration(SecondDotDuration - FirstDotDuration);
-        scene3.duration(ThirdDotDuration - SecondDotDuration);
+        scene.duration(FirstDotDuration - 100);
+        scene2.duration(SecondDotDuration - FirstDotDuration - 200);
+        scene3.duration(ThirdDotDuration - SecondDotDuration - 200);
     });
 }
 //FirstDot: 2229
