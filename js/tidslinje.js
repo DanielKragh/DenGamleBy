@@ -33,11 +33,13 @@ window.onload = function(){
         $(".left").eq(1).toggleClass("fade-in-from-left");
         $(".right").eq(1).toggleClass("fade-in-from-right");
         $("#secondDot").toggleClass("show");
+        animation2()
     });
     scene3.on("end", function(){
         $(".left").eq(2).toggleClass("fade-in-from-left");
         $(".right").eq(2).toggleClass("fade-in-from-right");
         $("#thirdDot").toggleClass("show");
+        animation3()
     });
 
     if(addIndicators){
