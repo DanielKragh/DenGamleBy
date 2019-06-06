@@ -1,5 +1,5 @@
 //https://scrollmagic.io/docs/ScrollMagic.Scene.html
-var addIndicators = true;
+var addIndicators = false;
 
 //We use onload here instead because jquery's onload event happens to early.
 window.onload = function(){
@@ -49,7 +49,6 @@ window.onload = function(){
     }
     
     $(window).on("resize scroll", function(){
-        console.log("test");
         FirstDotDuration = $("#firstDot").position().top - $(window).height() / 2;
         SecondDotDuration = $("#secondDot").position().top - $(window).height() / 2;
         ThirdDotDuration = $("#thirdDot").position().top - $(window).height() / 2;

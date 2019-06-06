@@ -38,6 +38,14 @@ body {
 		position: absolute;
 		width: 5%;
 		opacity: 0;
+
+		p {
+			position: absolute;
+			top: 47%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-weight: bold;
+		}
 	}
 
 	.show {
@@ -107,7 +115,7 @@ body {
 					}
 				}
 				svg#maane-raket {
-					width: 400px;
+					width: 50%;
 
 					g {
 						.st0 {

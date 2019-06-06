@@ -28,9 +28,10 @@ function animation1() {
         }
     }, 0);
     tl.fromTo(boom, 1, {
-        transform: "scale(0)"
+        scale: 0,
+        transformOrigin: "center"
     }, {
-        transform: "scale(1)"
+        scale: .75
     });
 }
 
