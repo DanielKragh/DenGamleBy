@@ -1,3 +1,19 @@
+main button {
+  width: 100px;
+  background: none;
+  border-radius: 5px;
+}
+
+main button#pauseBtn {
+  border: solid green 4px;
+  color: green;
+}
+
+main button#restartBtn {
+  border: solid orange 4px;
+  color: orange;
+}
+
 main div#spil {
   display: -ms-grid;
   display: grid;
