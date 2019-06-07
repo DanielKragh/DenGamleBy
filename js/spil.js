@@ -7,11 +7,24 @@ $(function () {
 
     var bgHeight = spilBg.height();
     var spilWidht = spilBg.width();
+
     var tls = [];
+    var paused = false;
+
     $("#pauseBtn").on("click", function(){
-        tls.forEach(function(element){
-            element.pause();
-        });
+        if(paused){
+            paused = false;
+            $(this).text("Pause");
+            tls.forEach(function(element){
+                element.resume();
+            });
+        } else {
+            paused = true;
+            $(this).text("Start");
+            tls.forEach(function(element){
+                element.pause();
+            });
+        }
     });
     function timeline(plakat){
         var tl = new TimelineMax();
@@ -27,6 +40,8 @@ $(function () {
     }
 
     setInterval(function () {
+        if(paused)
+            return;
         var plakatDiv = $("<div class='plakat'><img src='/resorces/img/Plakat1.jpg' draggable='false' alt=''></div>")
         spilBg.append(plakatDiv);
 
@@ -39,7 +54,4 @@ $(function () {
         });
 
     }, 500);
-
-
-
 });
