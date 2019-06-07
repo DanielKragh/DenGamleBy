@@ -150,9 +150,10 @@ img {
 				transform: translate(-50%, -50%);
 				font-size: 13vw;
 				color: white;
-				font-family: $fontBau;
 
 				span {
+					font-family: $fontBau;
+
 					&:nth-child(1) {
 						color: $red;
 					}

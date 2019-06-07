@@ -1,0 +1,39 @@
+main {
+    div#spil {
+        display: grid;
+        grid-template-rows: 70vh 100px 1fr;
+
+        div.spil-bg {
+            background-color: rgb(201, 201, 201);
+            overflow: hidden;
+            position: relative;
+
+            div.plakat {
+                position: absolute;
+                width: 80px;
+
+                img {
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        div.ild {
+            background-color: red;
+        }
+
+        div.plakat-samling {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            img {
+                width: 6%;
+                height: 100px;
+                cursor: pointer;
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,42 @@
+main div#spil {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70vh 100px 1fr;
+      grid-template-rows: 70vh 100px 1fr;
+}
+
+main div#spil div.spil-bg {
+  background-color: #c9c9c9;
+  overflow: hidden;
+  position: relative;
+}
+
+main div#spil div.spil-bg div.plakat {
+  position: absolute;
+  width: 80px;
+}
+
+main div#spil div.spil-bg div.plakat img {
+  width: 100%;
+  cursor: pointer;
+}
+
+main div#spil div.ild {
+  background-color: red;
+}
+
+main div#spil div.plakat-samling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+main div#spil div.plakat-samling img {
+  width: 6%;
+  height: 100px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=spil.css.map */
