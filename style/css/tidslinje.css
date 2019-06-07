@@ -35,6 +35,24 @@ body {
   stroke-dashoffset: 3550;
 }
 
+#linjeContainer #mobilLinje {
+  display: none;
+  position: absolute;
+  width: 7px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 620px) {
+  #linjeContainer #mobilLinje {
+    display: block;
+  }
+}
+
+#linjeContainer #mobilLinje path {
+  stroke-dasharray: 1080;
+  stroke-dashoffset: 1080;
+}
+
 #linjeContainer .dot {
   position: absolute;
   width: 5%;
@@ -44,16 +62,24 @@ body {
 @media only screen and (max-width: 620px) {
   #linjeContainer .dot {
     left: 82% !important;
+    width: 10%;
   }
+}
+
+#linjeContainer .dot text {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-anchor: middle;
 }
 
 #linjeContainer .dot p {
   position: absolute;
-  top: 47%;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: bold;
+  font-size: 0.75rem;
 }
 
 #linjeContainer .show {

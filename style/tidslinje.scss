@@ -30,21 +30,42 @@ body {
 		}
 	}
 
+	#mobilLinje {
+		display: none;
+		position: absolute;	
+		width: 7px;
+		height: 100%;
+		@media only screen and (max-width: 620px){
+			display: block;
+		}
+
+		path {
+			stroke-dasharray: 1080;
+			stroke-dashoffset: 1080;
+		}
+	}
+
 	.dot {	
 		@media only screen and (max-width: 620px){
 			left: 82% !important;
+			width: 10%;
 		}
 
 		position: absolute;
 		width: 5%;
 		opacity: 0;
-
+		text {
+			font-weight: bold;
+			font-size: 1.3rem;
+			text-anchor: middle;
+		}
 		p {
 			position: absolute;
-			top: 47%;
+			top: 45%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			font-weight: bold;
+			font-size: 0.75rem;
 		}
 	}
 
