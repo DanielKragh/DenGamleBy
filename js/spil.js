@@ -53,7 +53,7 @@ $(function () {
         var plakatRandom = Math.floor(Math.random() * Math.floor(plakatNavne.length));
         if (paused)
             return;
-        var plakatDiv = $("<div class='plakat'><img src='/resorces/img/"+plakatNavne[plakatRandom]+"' draggable='false' alt=''></div>")
+        var plakatDiv = $("<div class='plakat'><img src='resorces/img/"+plakatNavne[plakatRandom]+"' draggable='false' alt=''></div>")
         spilBg.append(plakatDiv);
 
         timeline(plakatDiv);
