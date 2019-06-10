@@ -35,7 +35,7 @@ $(function () {
         location.reload();
     });
 
-    // 
+    // animation
     function timeline(plakat) {
         var tl = new TimelineMax();
         tls.push(tl);
@@ -47,8 +47,11 @@ $(function () {
             transform: "translateY(" + bgHeight + "px) translateX(" + positionX + "px)",
             ease: Linear.easeNone
         });
+        console.log(plakat.position().top);
     }
 
+
+    //Spawner
     setInterval(function () {
         var plakatRandom = Math.floor(Math.random() * Math.floor(plakatNavne.length));
         if (paused)
@@ -65,7 +68,8 @@ $(function () {
         });
 
     }, 500);
-
+    
+    //Loop(50ms)
     setInterval(function () {
         // death
         if (!paused) {
@@ -73,23 +77,19 @@ $(function () {
             var numLiv = parseInt(pLiv, 10);
             var allPlakat = $(".plakat");
             allPlakat.each(function () {
-                if ($(this).position().top > bgHeight) {
+                if ($(this).offset().top >= spilBg.offset().top + bgHeight) {
                     numLiv--
                     $(".liv").text(numLiv);
                     $(this).remove();
                 }
-                console.log($(this).position().top)
+
                 if (numLiv == 0) {
                     paused = true;
-                    //$(this).text("Start");
                     tls.forEach(function (element) {
                         element.pause();
                     });
                 }
-            })
+            });
         }
-    }, 50)
-
-    // skriftende billeder
-    
+    }, 50);    
 });
