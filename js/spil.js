@@ -1,5 +1,5 @@
 $(function () {
-    var plakatNavne = ["Plakat1.jpg", "Plakat2.jpg", "Plakat3.jpg", "Plakat4.png", "Plakat5.png", "Plakat6.png"];
+    var plakatNavne = ["Plakat1", "Plakat2", "Plakat3", "Plakat4", "Plakat5", "Plakat6"];
     
     var plakatImg = $(".plakat img");
     var plakat = $(".plakat");
@@ -12,6 +12,8 @@ $(function () {
 
     var tls = [];
     var paused = false;
+
+    IldAnimation();
 
     // pause
     $("#pauseBtn").on("click", function () {
@@ -47,7 +49,6 @@ $(function () {
             transform: "translateY(" + bgHeight + "px) translateX(" + positionX + "px)",
             ease: Linear.easeNone
         });
-        console.log(plakat.position().top);
     }
 
 
@@ -56,7 +57,7 @@ $(function () {
         var plakatRandom = Math.floor(Math.random() * Math.floor(plakatNavne.length));
         if (paused)
             return;
-        var plakatDiv = $("<div class='plakat'><img src='resorces/img/"+plakatNavne[plakatRandom]+"' draggable='false' alt=''></div>")
+        var plakatDiv = $("<div class='plakat'><img src='resorces/img/spil/"+plakatNavne[plakatRandom]+".jpg' draggable='false' alt=''></div>")
         spilBg.append(plakatDiv);
 
         timeline(plakatDiv);
@@ -78,7 +79,7 @@ $(function () {
             allPlakat.each(function () {
                 
                 //Lose Health 
-                if ($(this).offset().top >= spilBg.offset().top + bgHeight) {
+                if ($(this).offset().top >= spilBg.offset().top + bgHeight - 5) {
                     numLiv--
                     $(".liv").text(numLiv);
                     $(this).remove();
@@ -95,3 +96,16 @@ $(function () {
         }
     }, 50);    
 });
+
+function IldAnimation(){
+    var ildTl = new TimelineMax({yoyo: true, repeat: -1});
+
+    ildTl.to($(".ild .a"), 0.5, {
+        x: "5%",
+        ease: Linear.easeNone
+    }, 0);
+    ildTl.to($(".ild .b"), 0.5, {
+        x: "-5%",
+        ease: Linear.easeNone
+    }, 0);
+}
