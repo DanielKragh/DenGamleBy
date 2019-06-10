@@ -71,18 +71,20 @@ $(function () {
     
     //Loop(50ms)
     setInterval(function () {
-        // death
         if (!paused) {
             var pLiv = $(".liv").text();
             var numLiv = parseInt(pLiv, 10);
             var allPlakat = $(".plakat");
             allPlakat.each(function () {
+                
+                //Lose Health 
                 if ($(this).offset().top >= spilBg.offset().top + bgHeight) {
                     numLiv--
                     $(".liv").text(numLiv);
                     $(this).remove();
                 }
 
+                // death
                 if (numLiv == 0) {
                     paused = true;
                     tls.forEach(function (element) {
