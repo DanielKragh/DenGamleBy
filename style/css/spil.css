@@ -3,6 +3,14 @@ main h1#spil-overskrift {
   margin: 20px 0;
 }
 
+main div#regler {
+  border: solid 2px gray;
+  border-radius: 5px;
+  width: 40%;
+  padding: 20px;
+  margin: 0px auto;
+}
+
 main button {
   width: 100px;
   background: none;
