@@ -1,9 +1,9 @@
 $(function () {
     var plakatNavne = ["Plakat1", "Plakat2", "Plakat3", "Plakat4", "Plakat5", "Plakat6"];
     
-    var plakatImg = $(".plakat img");
-    var plakat = $(".plakat");
-    var ild = $(".ild");
+    // var plakatImg = $(".plakat img");
+    // var plakat = $(".plakat");
+    // var ild = $(".ild");
     var spilBg = $(".spil-bg");
     var plakatSamling = $(".plakat-samling");
 
